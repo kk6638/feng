@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobalLink SaaS - 中英双语版</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #f4f7fc; color: #1f2937; margin:0; padding:0; }
+    header, section, footer { max-width:1200px; margin:auto; padding:80px 20px; text-align:center; }
+    h1 { font-size:52px; color:#3b82f6; margin-bottom:20px; }
+    p { font-size:18px; color:#64748b; margin-bottom:20px; }
+    .btn { display:inline-block; margin-top:30px; padding:16px 36px; background:#3b82f6; color:#fff; border-radius:8px; text-decoration:none; transition:0.3s; }
+    .btn:hover { background:#2563eb; }
+    .cards, .pricing, .pay-list { display:grid; gap:30px; margin-top:40px; }
+    .cards { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card, .price-box, .pay-item { background:#fff; padding:30px; border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+    .card:hover, .price-box:hover { transform: translateY(-5px); box-shadow:0 8px 30px rgba(0,0,0,0.15); }
+    .price-box { text-align:center; border:1px solid #e2e8f0; }
+    .price-box h3, .card h3 { color:#3b82f6; margin-bottom:15px; }
+    .price { font-size:42px; color:#3b82f6; margin:20px 0; }
+    ul { list-style:none; margin:20px 0; color:#64748b; }
+    .pay-list { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+    .pay-item { font-weight:600; color:#1e40af; }
+    .notice { margin-top:30px; font-size:14px; color:#64748b; }
+    .lang-toggle { position:fixed; top:20px; right:20px; background:#3b82f6; color:#fff; padding:10px 20px; border-radius:8px; cursor:pointer; }
+  </style>
+</head>
+<body>
+
+<div class="lang-toggle" onclick="toggleLang()">EN/中</div>
+
+<header>
+  <h1 data-en="GlobalLink SaaS" data-zh="GlobalLink SaaS">GlobalLink SaaS</h1>
+  <p data-en="Enterprise-level global network acceleration & cross-border access solutions." data-zh="提供企业级全球网络加速与跨境访问解决方案。">提供企业级全球网络加速与跨境访问解决方案。</p>
+  <a href="#pricing" class="btn" data-en="View Plans" data-zh="查看套餐">查看套餐</a>
+</header>
+
+<section>
+  <h2 data-en="Features" data-zh="服务特点">服务特点</h2>
+  <p data-en="Reliable and flexible for enterprises" data-zh="企业级服务，灵活可靠">企业级服务，灵活可靠</p>
+  <div class="cards">
+    <div class="card">
+      <h3 data-en="Global Nodes" data-zh="全球节点">全球节点</h3>
+      <p data-en="Coverage in North America, Europe, Asia." data-zh="覆盖北美、欧洲、亚洲等主要地区，保障跨境业务畅通。">覆盖北美、欧洲、亚洲等主要地区，保障跨境业务畅通。</p>
+    </div>
+    <div class="card">
+      <h3 data-en="High Speed & Stable" data-zh="高速稳定">高速稳定</h3>
+      <p data-en="Optimized routing & low latency." data-zh="优化线路与智能负载均衡，提供低延迟、稳定网络体验。">优化线路与智能负载均衡，提供低延迟、稳定网络体验。</p>
+    </div>
+    <div class="card">
+      <h3 data-en="Multi-platform" data-zh="多平台兼容">多平台兼容</h3>
+      <p data-en="Supports Windows, macOS, iOS, Android." data-zh="支持 Windows、macOS、iOS、Android 多终端接入。">支持 Windows、macOS、iOS、Android 多终端接入。</p>
+    </div>
+    <div class="card">
+      <h3 data-en="Enterprise Support" data-zh="企业支持">企业支持</h3>
+      <p data-en="Dedicated support 24/7." data-zh="专属客服与技术团队，7x24 小时响应企业需求。">专属客服与技术团队，7x24 小时响应企业需求。</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2 data-en="Pricing Plans" data-zh="套餐价格">套餐价格</h2>
+  <p data-en="Flexible subscriptions for different needs" data-zh="灵活订阅，满足不同企业需求">灵活订阅，满足不同企业需求</p>
+  <div class="pricing">
+    <div class="price-box">
+      <h3 data-en="Monthly Plan" data-zh="月付方案">月付方案</h3>
+      <div class="price">$9.9</div>
+      <ul>
+        <li data-en="1000GB High-Speed" data-zh="1000GB 高速流量">1000GB 高速流量</li>
+        <li data-en="Global Nodes" data-zh="全球节点">全球节点</li>
+        <li data-en="Up to 5 devices" data-zh="支持5台设备">支持5台设备</li>
+        <li data-en="24/7 Enterprise Support" data-zh="7x24 企业支持">7x24 企业支持</li>
+      </ul>
+      <a href="#payment" class="btn" data-en="Subscribe Now" data-zh="立即订阅">立即订阅</a>
+    </div>
+    <div class="price-box">
+      <h3 data-en="Quarterly Plan" data-zh="季度方案">季度方案</h3>
+      <div class="price">$25.9</div>
+      <ul>
+        <li data-en="Unlimited speed" data-zh="不限速连接">不限速连接</li>
+        <li data-en="Priority routing" data-zh="优先线路">优先线路</li>
+        <li data-en="Up to 10 devices" data-zh="支持10台设备">支持10台设备</li>
+        <li data-en="Dedicated support" data-zh="专属客服支持">专属客服支持</li>
+      </ul>
+      <a href="#payment" class="btn" data-en="Subscribe Now" data-zh="立即订阅">立即订阅</a>
+    </div>
+    <div class="price-box">
+      <h3 data-en="Annual Plan" data-zh="年度方案">年度方案</h3>
+      <div class="price">$89.9</div>
+      <ul>
+        <li data-en="Year-round discount" data-zh="全年优惠价格">全年优惠价格</li>
+        <li data-en="Premium lines" data-zh="高级专线">高级专线</li>
+        <li data-en="Unlimited devices" data-zh="不限设备数量">不限设备数量</li>
+        <li data-en="VIP support" data-zh="VIP 技术支持">VIP 技术支持</li>
+      </ul>
+      <a href="#payment" class="btn" data-en="Subscribe Now" data-zh="立即订阅">立即订阅</a>
+    </div>
+  </div>
+</section>
+
+<section id="payment">
+  <h2 data-en="Payment Methods" data-zh="支付方式">支付方式</h2>
+  <p data-en="Supports global users" data-zh="支持全球用户支付">支持全球用户支付</p>
+  <div class="pay-list">
+    <div class="pay-item">Stripe</div>
+    <div class="pay-item">PayPal</div>
+    <div class="pay-item">Visa / MasterCard</div>
+    <div class="pay-item">Apple Pay</div>
+    <div class="pay-item">Google Pay</div>
+    <div class="pay-item">USDT (TRC20)</div>
+  </div>
+  <div class="notice" data-en="Legal notice" data-zh="使用须知">本网站提供国际网络连接与跨境办公加速服务，仅面向遵守当地法律法规的用户使用。用户需自行确认所在地区相关法律政策，并合法合规使用网络服务。</div>
+</section>
+
+<footer>
+  <p>© 2026 GlobalLink SaaS. All Rights Reserved.</p>
+</footer>
+
+<script>
+function toggleLang() {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const current = el.textContent;
+    el.textContent = el.getAttribute('data-en') === current ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+  });
+}
+</script>
+
+</body>
+</html>
